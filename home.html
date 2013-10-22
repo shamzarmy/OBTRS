@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"> 
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+
+<link rel="stylesheet" type="text/css" media="all" href="jsDatePick_ltr.min.css" />
+
+<script type="text/javascript" src="jsDatePick.min.1.3.js"></script>
+
+<title>obtrs</title>
+
+</head>
+
+<body bgcolor="#E6E6FA">  
+
+
+
+<div id="form1" style="margin-left : 120px ; margin-top : 45px ">
+
+<h1>VOSS BUS MANAGEMENT SYSTEM</h1>
+<h3>Find buses and book tickets here</h3><br>
+
+<form method="post" id="searchbox" action="searchbus.php">  
+
+Source:<input type="text" name="source" size=30/> 
+
+<br><br>
+  
+Destination:<input type="text" size=29 name="destination" />
+
+
+<div id="dates" style="margin-left : 460px ; margin-top : 0px ">
+Date:<input type="text" id="date" name="date" />
+<script type="text/javascript">
+	
+	new JsDatePick({
+			useMode:2,
+			target:"date",
+			dateFormat:"%Y-%m-%d",
+ limitToToday:false,
+ cellColorScheme:"armygreen"
+
+		});
+</script>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+&nbsp;&nbsp;
+<input type="submit" value="Search">  
+
+
+</form>  
+
+</div>
+ </body>
+
+</html>
+
